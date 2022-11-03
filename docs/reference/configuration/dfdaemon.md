@@ -263,11 +263,12 @@ health:
     key: ''
     tlsVerify: false
   tcpListen:
-    # path health endpoint, default to /server/ping
+    # Health path, default value is /server/ping.
     path: /server/ping
     # # Listen address.
     # listen: 0.0.0.0
     # Listen port, daemon will try to listen,
+    # when this port is not available, daemon will try next port.
     port: 40901
     # If want to limit upper port, please use blow format.
 #   port:
